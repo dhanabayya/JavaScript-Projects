@@ -19,4 +19,7 @@ console.log(arr);
 //d) We can take a comma-separated string and convert it into a modifiable array. Try it! Alphabetize the cargoHold string, and then combine the contents into a new string.
 let cargoHold = "water,space suits,food,plasma sword,batteries";
 //cargoHold[0]= "water,space suits,food,plasma sword,batteries";
-cargoHold=console.log(cargoHold.split(' '));
+cargoHold=cargoHold.split(',').sort();
+console.log(cargoHold);
+cargoHold=cargoHold.join(',');
+console.log(cargoHold);
